@@ -2,6 +2,7 @@
 var app = require('app'),
     BrowserWindow = require('browser-window'),
     Menu = require('menu'),
+    path = require('path'),
     menu,
     template;
 
@@ -22,9 +23,9 @@ app.on('ready', function() {
     height: 728
   });
   if (process.env.HOT) {
-    mainWindow.loadUrl('file://' + __dirname + '/app/hot-dev-app.html');
+    mainWindow.loadUrl('file://' + path.join(__dirname, '../', '/app/hot-dev-app.html'));
   } else {
-    mainWindow.loadUrl('file://' + __dirname + '/app/app.html');
+    mainWindow.loadUrl('file://' + path.join(__dirname, '../', '/app/app.html'));
   }
   mainWindow.on('closed', function() {
     mainWindow = null;

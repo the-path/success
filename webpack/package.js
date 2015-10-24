@@ -7,18 +7,17 @@ var os = require('os'),
     del = require('del'),
     exec = require('child_process').exec,
     argv = require('minimist')(process.argv.slice(2)),
-    devDeps = Object.keys(require('./package.json').devDependencies),
-    appName = argv.name || argv.n || 'The Path - Success',
+    devDeps = Object.keys(require('../package.json').devDependencies),
+    appName = argv.name || argv.n || 'success',
     shouldUseAsar = argv.asar || argv.a || false,
     shouldBuildAll = argv.all || false;
 
 var DEFAULT_OPTS = {
-  dir: './',
+  dir: '../',
   name: appName,
   asar: shouldUseAsar,
   ignore: [
     '/test($|/)',
-    '/tools($|/)',
     '/release($|/)'
   ].concat(devDeps.map(function(name) { return '/node_modules/' + name + '($|/)'; }))
 };

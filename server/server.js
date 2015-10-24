@@ -1,7 +1,7 @@
 var path = require('path'),
     express = require('express'),
     webpack = require('webpack'),
-    config = require('./webpack.config.development'),
+    config = require('../webpack/webpack.config.development'),
     app = express(),
     compiler = webpack(config),
     wpOpts = {
