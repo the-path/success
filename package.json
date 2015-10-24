@@ -1,7 +1,7 @@
 {
-  "name": "electron-react-boilerplate",
-  "version": "0.6.2",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "the-path-success",
+  "version": "0.0.1",
+  "description": "",
   "main": "main.js",
   "scripts": {
     "test": "NODE_ENV=test mocha --compilers js:babel/register --recursive",
@@ -19,27 +19,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chentsulin/electron-react-boilerplate.git"
+    "url": "git+https://github.com/the-path/success.git"
   },
   "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
+    "name": "Clark Feusier",
+    "email": "cfeusier@gmail.com",
+    "url": "https://github.com/cfeusier"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chentsulin/electron-react-boilerplate/issues"
+    "url": "https://github.com/the-path/success/issues"
   },
-  "keywords": [
-    "electron",
-    "boilerplate",
-    "react",
-    "react-router",
-    "flux",
-    "webpack",
-    "react-hot"
-  ],
-  "homepage": "https://github.com/chentsulin/electron-react-boilerplate#readme",
+  "keywords": [],
+  "private": "true",
+  "homepage": "https://github.com/the-path/success#readme",
   "devDependencies": {
     "asar": "^0.8.0",
     "babel": "^5.8.23",

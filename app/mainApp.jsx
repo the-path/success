@@ -4,7 +4,7 @@ import router from './routes/router';
 import debug from './utils/debug';
 import './app.css';
 
-var dd = debug('mainApp');
+let dd = debug('mainApp');
 
 window.location.hash = '/';
 
