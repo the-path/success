@@ -1,5 +1,7 @@
+'use strict';
+
 /* eslint no-path-concat: 0, func-names:0 */
-var app = require('app'),
+let app = require('app'),
     BrowserWindow = require('browser-window'),
     Menu = require('menu'),
     path = require('path'),
@@ -9,7 +11,7 @@ var app = require('app'),
 require('electron-debug')();
 require('crash-reporter').start();
 
-var mainWindow = null;
+let mainWindow = null;
 
 app.on('window-all-closed', function() {
   if (process.platform !== 'darwin') {
